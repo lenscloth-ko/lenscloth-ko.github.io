@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="MES는 Manufacturing Execution System 의 약어라고 합니다. 생산관리시스템 / 제조실행시스템 으로 불리고 있더라고요 정확한 표현은 추후에라도 업데이트 하겠습니다. 우선 저처럼 MES의 약어가 무엇인가 부터 찾으시는분들을 위해 제가 먼저 검색해보고 잘 이해가 되었던 링크를 하나 공유해 드리겠습니다. 미라콤 이라는 회사 웹사이트에 가보">
+<meta name="keywords" content="MES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MES(생산관리시스템, Manufacturing Execution System)">
+<meta property="og:url" content="https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/index.html">
+<meta property="og:site_name" content="lenscloth.io blog">
+<meta property="og:description" content="MES는 Manufacturing Execution System 의 약어라고 합니다. 생산관리시스템 / 제조실행시스템 으로 불리고 있더라고요 정확한 표현은 추후에라도 업데이트 하겠습니다. 우선 저처럼 MES의 약어가 무엇인가 부터 찾으시는분들을 위해 제가 먼저 검색해보고 잘 이해가 되었던 링크를 하나 공유해 드리겠습니다. 미라콤 이라는 회사 웹사이트에 가보">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2018-12-18T01:36:11.437Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MES(생산관리시스템, Manufacturing Execution System)">
+<meta name="twitter:description" content="MES는 Manufacturing Execution System 의 약어라고 합니다. 생산관리시스템 / 제조실행시스템 으로 불리고 있더라고요 정확한 표현은 추후에라도 업데이트 하겠습니다. 우선 저처럼 MES의 약어가 무엇인가 부터 찾으시는분들을 위해 제가 먼저 검색해보고 잘 이해가 되었던 링크를 하나 공유해 드리겠습니다. 미라콤 이라는 회사 웹사이트에 가보">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>MES(생산관리시스템, Manufacturing Execution System)</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/12/17/hello-world/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/01/25/Life-Cycle-of-TempData-in-ASP-Net-MVC/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&text=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&is_video=false&description=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MES(생산관리시스템, Manufacturing Execution System)&body=Check out this article: https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&name=MES(생산관리시스템, Manufacturing Execution System)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        MES(생산관리시스템, Manufacturing Execution System)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">lenscloth.io blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-10-10T01:30:58.000Z" itemprop="datePublished">2018-10-10</time>
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/MES/">MES</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/MES/">MES</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>MES는 Manufacturing Execution System 의 약어라고 합니다.</p>
+<p>생산관리시스템 / 제조실행시스템 으로 불리고 있더라고요 정확한 표현은 추후에라도 업데이트 하겠습니다.</p>
+<p>우선 저처럼 MES의 약어가 무엇인가 부터 찾으시는분들을 위해 제가 먼저 검색해보고 잘 이해가 되었던 링크를 하나 공유해 드리겠습니다.</p>
+<p>미라콤 이라는 회사 웹사이트에 가보면 다양한 정보가 있더라고요<br>특히 MES란 무엇인가? 라는 카툰으로된 설명이 이해하기가 쉬웠습니다.<br>참고로 전 이 기업과 전혀 관계가 없습니다!</p>
+<p>처음에는 공장자동화(Factory Automation)? 비스무리한 개념으로 접근을 했었습니다…<br>사실 관점에 따라 다르겠지만(저도 검색하다보니 엄청 난감하고 아직도 정리가 안끝나더라고요)</p>
+<p>비슷하게 혼동이 가던 개념이 스마트팩토리(Smart Factory) 였습니다…<br>이걸 사무환경으로 그대로 옮겨서 이해를 하려고 노력을 해봤는데요…이렇습니다….</p>
+<p>사무자동화(Office Automation)와 스마트오피스(Smart Office)? 가 있다고 가정을 하고 -_-;</p>
+<p>회사에서 연/월차 등의 업무처리에 인쇄물 직접 서면보고 형식의 프로세스를 가지고있다 라고 가정을 해 봤습니다(요즘은 잘 없겠죠~?)…제가 이런 프로세스의 회사에서 초창기에 근무한적이 있었습니다…</p>
+<p>누가 힘드냐!!!</p>
+<p>가야할사람 : 결제권자 만나기 겁나 힘들고 이거 들고가면 꼭 이상한 일정체크와 농담해서 사람 민망하게 합니다..<br>결제권자 : 허…이놈이 분명 내일까지 할일이 있는데…계속 찾아와서 좀 쉬자고 들이댑니다…<br>경리부 대리누나(그땐 막내였거든요 ㅎ) : 연말마다 연차보상비 계산하느라 몇일밤 집에도 못가고 계산기 다 뚜드리고 정리끝나서 갈려고 하면 “아 찾았어요 이러고 겁나들 몰려옵니다 - _-좀비WAR!!”<br>경리부 책임이사님 : 경리부 대리누나한테 이아이는 왜 우리회사 지급일수보다 3일을 더 쉬었니? 라며 보상비를 받아오라 하십니다 ㅋㅋㅋㅋ<br>그냥 억울한 사람 : 분명 그날 제출도 하고 결제도 하고 다했는데….그날 급한업무 때문에 못 쉬었는데….그날이 몇일이었는지…(월요일날 출근해서 토요일 점심먹고 집에가고 이랬는데!!!) 기억이 안나서 그냥 쉰걸로 치고 마음을 비웠더니 경리부 책임이사님이 보상비 내노라고 버럭버럭 하십니다 ㅋㅋ<br>사장님 : 내돈이….이것들 양심에 따라 지급되는 느낌이라 자선사업가가 된 느낌입니다 ;;<br>웃자고 쓴…..실화입니다 ㅡㅡ……..이직 후에는 그룹웨어가 잘(?) 되어있어서 이런일들이 모두 전자결제를 통한 업무처리 프로세스가 도입되어 있었습니다.</p>
+<p>이로써 위에 해프닝에서 일어난 누수라고 볼 수 있는 것들(시간/인력, 부정확한 정보로 인한 데이터 관리불가와 정보의 신뢰도 하락 등등등등등….)을 막을 수 있는 좋은 페러다임이 사무자동화의 한 축이었다고 생각할 수 있다..라고 저는 생각해 봅니다 이를 공장자동화로 매칭을 시켜봤습니다..물론 많은 차이가 있고 전문분야도 아니기때문에 어설프게 이해한 상황일지도 모릅니다.</p>
+<p>이번엔 정말 이해를 위한 억지 이해를 써야할듯 해서 죄송스럽지만….적어보겠습니다</p>
+<p>어떤 웹사이트 프로젝트가 기획/개발/디자인/퍼블리싱 구간 어디까지 진행되고있는지를 회의에서 물어보시는 사장님의 기습공격을 받은 사람이 어……..그룹웨어에는 지금 투입인력 전체비용 프로젝트기간 외에는 그런 자세한 정보가 나와있지 않아서 나와있고 아는 부분만 답변을 하게됩니다……당연히 알아야하는 PM역활 등의 사람들이야 숙지하고 있겠지만 외에 관련자/확인자 등은 확인하려면 역시나 해당 관련업무 숙지자를 만나야 정확한 상황을 파악 할 수 있습니다.</p>
+<p>이는 역시 또다른 투입인력과 인력운영에 여러가지 누수가 생기게 됩니다(직원들이야 좋쵸 ㅋㅋㅋㅋ…그런데 회사 망하면 힘들잖아요 ㅠㅠ), 이에 스마트 오피스라는 프로세스를 도입하기로 마음먹고 이에 각 직군별 자세한 진행상황을 확인할 수 있게 됩니다..이는 투입인력이 과부하 상황에서 어려움을 겪는지 혹은 과투입되어 비용이 낭비되고있는지 등의 확인이 수월해 질 수 있습니다.</p>
+<p>이를 즉 스마트 오피스로 대입해서 이해한 상황입니다.</p>
+<p>정말 말이 앞뒤도 안맞고 이상하다고 저도 느끼지만…저는 아직 이정도 수준이라 ㅠㅠ</p>
+<p>크흠…급 정색하지만</p>
+<p>MES는 이러한 스마트오피스 와 완전 일치되는 개념은 아닌듯 하지만 별개로</p>
+<p>해당 공정을 정보화하며 모니터링하고 문제(제품의 품질, 공정상 불량)를 추적가능하게 하는 시스템에 속하는 하나의 작은 서브 시스템 이라고 이해하고 시작하기로 했습니다.</p>
+<p>와서 진짜 깜짝놀란건 모든 용어가 처음듣고 용어들을 모르면 대화가 어렵다는 점 이었습니다, 지금은 다행이 PI기간이고 제가 적응할 시간이 있는참이어서 디테일한 정보습득을 정말 부지런하게 메모하고있는 와중입니다, 아마 용어만 정리해도 엄청날듯 합니다…QMS, WMA, ERP, Silo, 등등등..수도 없습니다..ㄷㄷㄷㄷㄷ</p>
+<p>앞으로도 정리하면서 공부하겠지만 처음이니만큼 사설이 반인듯 했네요…….</p>
+<p>많은 지적 부탁드리고 첫 기고글에서 많은 변화가 있으리라 생각합니다(정확한 개념을 잡으면 수정하겠습니다).</p>
+<p>읽어주셔서 감사합니다.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&text=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&is_video=false&description=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MES(생산관리시스템, Manufacturing Execution System)&body=Check out this article: https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&title=MES(생산관리시스템, Manufacturing Execution System)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lenscloth-ko.github.io.git/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/&name=MES(생산관리시스템, Manufacturing Execution System)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 jklee@lenscloth.io
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
