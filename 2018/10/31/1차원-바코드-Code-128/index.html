@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다. BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다. co">
+    <meta name="description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다.BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다.code">
 <meta name="keywords" content="Barcode,Code128">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1차원 바코드 Code 128">
 <meta property="og:url" content="https://lenscloth-ko.github.io.git/2018/10/31/1차원-바코드-Code-128/index.html">
 <meta property="og:site_name" content="lenscloth.io blog">
-<meta property="og:description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다. BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다. co">
+<meta property="og:description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다.BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다.code">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://lenscloth-ko.github.io.git/images/2018/250px-9494-RI476394652CH.jpg">
 <meta property="og:image" content="https://lenscloth-ko.github.io.git/images/2018/400px-Barcode_diagram.svg.png">
 <meta property="og:image" content="https://lenscloth-ko.github.io.git/images/2018/code128_LeeJungKyu.png">
-<meta property="og:updated_time" content="2018-12-18T05:19:56.939Z">
+<meta property="og:updated_time" content="2018-12-18T05:23:13.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="1차원 바코드 Code 128">
-<meta name="twitter:description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다. BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다. co">
+<meta name="twitter:description" content="1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다. 총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다.BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다.code">
 <meta name="twitter:image" content="https://lenscloth-ko.github.io.git/images/2018/250px-9494-RI476394652CH.jpg">
     
     
@@ -151,21 +151,15 @@
   <div class="content" itemprop="articleBody">
     <img src="/images/2018/250px-9494-RI476394652CH.jpg" title="barcode">
 <p>1차원 바코드 생성 로직중에 가장 많은 정보를 담을 수 있는 방식을 찾고있었기에 EAN-13(GS1-13)등을 찾아보다가 code128방식으로 결정해서 진행하고자 합니다.</p>
-<p>총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다.</p>
-<p>BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다.</p>
-<p>code128의 사양(Specification)<br><img src="/images/2018/400px-Barcode_diagram.svg.png" title="barcode"><br>그림처럼 총 6개의 구역으로 이루어져 있습니다.</p>
+<p>총 108개의 문자를 표현할 수 있으며 시작(3) 종료(2)는 문자수에서 제외됩니다.<br>BARCODE의 구성원리는 알아보았으니 실직적으로 code128의 원리를 파보도록 하겠습니다.<br>code128의 사양(Specification)<br><img src="/images/2018/400px-Barcode_diagram.svg.png" title="barcode"><br>그림처럼 총 6개의 구역으로 이루어져 있습니다.</p>
 <p>1.Quiet zone<br>2.Start symbol<br>3.Encoded data<br>4.Check symbol<br>5.Stop symbol<br>6.Final bar (often considered part of the stop symbol)<br>7.Quiet zone</p>
 <p>##Quiet zone<br>Quiet zone은 바코드의 앞/뒤에 존재하게 되며 특별히 code128이 아니더라도 모든 바코드에서는 앞/뒤 여백이 있어야 합니다…사실 표준기관에 quiet zone spec을 보면 반드시 아무것도 인쇄해서는 안되는 영역이며 반드시 보장되어야 하는 영역이라고 명시되어있습니다.(약식 바코드 까지 EAN-8? 같은 것도 포함되는지는 모르겠네요)</p>
 <p>보통 내용문자 *10의 크기를 가져야 합니다.</p>
 <p>이 영역이 사실 디코딩 수준을 결정하기에 딱1개의 양쪽에 <em>10크기로 비워라는 아니긴 합니다만, Normal, More Aggressive, One Side EB, Anything 등의 디코딩을 위한 방식이 있으나..넘어게도록 하겠습니다 일단은 양쪽에 </em>10 크기로 비우는걸로 ㅎ</p>
 <p>##Start symbol<br>존재목적이라 함은…이제 바코드가 시작된다를 알립니다…허무한가요..;;</p>
 <p>code 128에는 3종류의 codeset이 존재합니다, 128a, 128b, 128c라고 한다고 저는 알고있는데 이게 정말 공식적인 명칭인지는 확실하지 않으니 이부분이 궁금하시면 따로 확인을 해보시면 될듯 합니다…저는 딱히 안궁금해서 ㅠㅠ<br><blockquote><p>– 2018-11-02 추가 시작</p>
-<p>Code 128 A: Partial ASCII set, no lower case, but ASCII control chars (TAB, CR/LF etc.)<br>Code 128 B: Full ASCII set, no ASCII control chars<br>Code 128 C: Only digits 0-9, encoded in pairs, very compact code</p>
-<p>A,B,C 의 명칭이 그닥 공식화 되어있지 않지만 대충 A,B,C라고 부르네요 그냥 다들 ㅡㅡ;;</p>
-<p>각 코드셋이 수용할 수 있는 범위가 명시되어있는 정보를 찾아서 내용을 추가합니다.</p>
-<p>– 2018-11-02 추가 끝</p>
-</blockquote></p>
-<p>code128 codeset별 codevalue 참고</p>
+<p>Code 128 A: Partial ASCII set, no lower case, but ASCII control chars (TAB, CR/LF etc.)<br>Code 128 B: Full ASCII set, no ASCII control chars<br>Code 128 C: Only digits 0-9, encoded in pairs, very compact code<br>A,B,C 의 명칭이 그닥 공식화 되어있지 않지만 대충 A,B,C라고 부르네요 그냥 다들 ㅡㅡ;;<br>각 코드셋이 수용할 수 있는 범위가 명시되어있는 정보를 찾아서 내용을 추가합니다.<br>– 2018-11-02 추가 끝</p>
+</blockquote><br>code128 codeset별 codevalue 참고</p>
 <p>코드표에서 보면 Start Code A(211412), Start Code B(211214), Start Code C(211232)<br>가 명시되어있는 것을 확인하실 수 있습니다.<br>예를들어 Start Code B(211214)<br>11010010000    211214<br>는 검검흰검흰흰검흰흰흰흰 으로 이루어진 </p>
 <p>■■□■□□■□□□□ 처럼 생긴 바코드로 표현이 되겠지요</p>
 <p>##Encoded data<br>여긴 말그대로 데이터입니다.</p>
@@ -185,24 +179,17 @@
 <p>다른건 틀린게 없는데 더할때 맨처음에 StartSymbol 의 문자값(Value)을 더해야 합니다, 그러니…결국 ㅠㅠ CheckSum 값이 여기서 먼저 보신분처럼 하면 다르겠죠 결국 그걸로 바코드 찍히긴 합니다만….검증시에 계속 에러가 나고있었네요…. 죄송합니다 ㅠㅠ</p>
 </blockquote><br>그러면!!!</p>
 <p>104(Start Code B 의 Value) + 44 + 138 + 207 + 168 + 425 + 468 + 497 + 344 + 801 + 850 = <del>3,942</del> 4,046</p>
-<p><del>3,942를 103으로 나누면 = 38.271844660194176</del></p>
-<p>4,046을 103으로 나누면 = 39.2815533980583</p>
+<p><del>3,942를 103으로 나누면 = 38.271844660194176</del><br>4,046을 103으로 나누면 = 39.2815533980583</p>
 <p>참고 : 여기서 나머지를 구하는건 나머지를 구하는 알고리즘을 따로 찾아보시기 바랍니다.(산수시간인가요 ㅎㅎ?)</p>
-<p><del>여기서 몫 : 38 / 나머지 : 28</del></p>
-<p>여기서 몫 : 39 / 나머지 : 29</p>
+<p><del>여기서 몫 : 38 / 나머지 : 28</del><br>여기서 몫 : 39 / 나머지 : 29</p>
 <p>이란 결과를 얻을 수 있습니다, 그럼 <del>28</del>29 이 표현되는 codeset B에 <del>&lt;</del>= 기호가 Check symbol이 되겠습니다.!!!!</p>
 <p>Start symbol/LeeJungKyu<del>&lt;</del>=/Stop symbol</p>
-<p>최종 이런모습이 데이터가 되겠네요..나중에 확인했는데 틀리면 망신인데요…..</p>
-<p>하…다시 노가다를</p>
+<p>최종 이런모습이 데이터가 되겠네요..나중에 확인했는데 틀리면 망신인데요…..<br>하…다시 노가다를</p>
 <p>Start Code B : 211214  =&gt; 11010010000</p>
 <p>L : 132131 =&gt; 10001101110<br>e : 112214 =&gt; 10110010000<br>e : 112214 =&gt; 10110010000<br>J : 112133 =&gt; 10110111000<br>u : 124211 =&gt; 10011110010<br>n : 241112 =&gt; 11000010100<br>g : 122114 =&gt; 10011010000<br>K : 112331 =&gt; 10110001110<br>y : 212141 =&gt; 11011011110<br>u : 124211 =&gt; 10011110010<br><del>&lt; : 322112 =&gt; 11100110100</del><br>= : 322211 =&gt; 11100110010</p>
-<p>Stop pattern : 2331112 =&gt; 1100011101011</p>
-<p>LeeJungKyu 란 문자를 code128식의 바코드 형태로 변경하면</p>
-<p>211214132131112214112214112133124211241112122114112331212141124211<del>322112</del>3222112331112</p>
-<p>가 되는겁니다 .</p>
-<p> 마지막으로 패턴으로 변경하면</p>
-<p>1101001000010001101110101100100001011001000010110111000100111100101100001010010011010000101100011101101101111010011110010<del>11100110100</del>111001100101100011101011</p>
-<p> 0과 1로 그림을 그리는데 1개의 숫자는 일정한 사이즈로 선을 그립니다 여기서 맨처음 Quiet zone 을 다시 생각해보면 1개의 숫자가 그어지는 선의 10배만큼씩 좌우로 여백을 주고 안에다 그려야 한다는 말이었다고 이해가 되시는지 모르겠습니다.</p>
+<p>Stop pattern : 2331112 =&gt; 1100011101011<br>LeeJungKyu 란 문자를 code128식의 바코드 형태로 변경하면<br>211214132131112214112214112133124211241112122114112331212141124211<del>322112</del>3222112331112<br>가 되는겁니다 .</p>
+<p>마지막으로 패턴으로 변경하면<br>1101001000010001101110101100100001011001000010110111000100111100101100001010010011010000101100011101101101111010011110010<del>11100110100</del>111001100101100011101011</p>
+<p>0과 1로 그림을 그리는데 1개의 숫자는 일정한 사이즈로 선을 그립니다 여기서 맨처음 Quiet zone 을 다시 생각해보면 1개의 숫자가 그어지는 선의 10배만큼씩 좌우로 여백을 주고 안에다 그려야 한다는 말이었다고 이해가 되시는지 모르겠습니다.</p>
 <blockquote><p>왜 도대체 2331112가 1100011101011로 변환되느냐를 고민하시는분들이 계실까봐…</p>
 <p>barcode 128 codeset 여기를 다시 보시죠 자세히..ㅋㅋ</p>
 <p>Widths죠? Pattern이고요 Widths는 규칙이 있습니다..사실 이게 저도 정확하게 궁금한 부분인데 Widths값이 Pattern값으로 변환되는 규칙은 저는 BWB(Black White Black)으로 외워서 알고있거든요…깊게 찾아보지 않고 그냥 그렇게 외우고 있습니다 ㅠㅠ</p>
