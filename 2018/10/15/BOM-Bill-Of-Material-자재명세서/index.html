@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립품인 경우에는 계층적인 구조로 작성될 수 있다. 위키자재 명세서 BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태">
+<meta name="keywords" content="BOM,Bill Of Meterial,자재명세서">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BOM(Bill Of Material, 자재명세서)">
+<meta property="og:url" content="https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/index.html">
+<meta property="og:site_name" content="lenscloth.io blog">
+<meta property="og:description" content="자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립품인 경우에는 계층적인 구조로 작성될 수 있다. 위키자재 명세서 BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2018-12-18T02:02:00.224Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BOM(Bill Of Material, 자재명세서)">
+<meta name="twitter:description" content="자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립품인 경우에는 계층적인 구조로 작성될 수 있다. 위키자재 명세서 BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>BOM(Bill Of Material, 자재명세서)</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2018/12/17/hello-world/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2018/10/11/Lot-No-Batch-No/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&text=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&is_video=false&description=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=BOM(Bill Of Material, 자재명세서)&body=Check out this article: https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&name=BOM(Bill Of Material, 자재명세서)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        BOM(Bill Of Material, 자재명세서)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <span itemprop="name">lenscloth.io blog</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-10-15T01:57:16.000Z" itemprop="datePublished">2018-10-15</time>
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/MES/">MES</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/BOM/">BOM</a>, <a class="tag-link" href="/tags/Bill-Of-Meterial/">Bill Of Meterial</a>, <a class="tag-link" href="/tags/자재명세서/">자재명세서</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <blockquote><p>자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립품인 경우에는 계층적인 구조로 작성될 수 있다.</p>
+<footer><strong>위키</strong><cite><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%AC_%EB%AA%85%EC%84%B8%EC%84%9C" target="_blank" rel="noopener">자재 명세서</a></cite></footer></blockquote>
+<p>BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태 같습니다.</p>
+<p>BOM과 처방전을 화학에서는 같이 사용하던데 느낌상 BOM은 최초 발행된 조합정보이며 처방전은 실제 생산하면서 배합양 비율등이 조정되는 업데이트 되는 정보라고 이해하고있습니다.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&text=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&is_video=false&description=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=BOM(Bill Of Material, 자재명세서)&body=Check out this article: https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&title=BOM(Bill Of Material, 자재명세서)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://lenscloth-ko.github.io.git/2018/10/15/BOM-Bill-Of-Material-자재명세서/&name=BOM(Bill Of Material, 자재명세서)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 jklee@lenscloth.io
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
