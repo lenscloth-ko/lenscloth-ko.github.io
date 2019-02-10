@@ -1,384 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="ko"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="blog"><meta name="keywords" content=""><meta name="author" content="jklee@lenscloth.io,undefined"><meta name="copyright" content="jklee@lenscloth.io"><title>lenscloth v2 dev | lenscloth.io blog</title><link rel="shortcut icon" href="/my-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<!-- Head tag -->
-<head><meta name="generator" content="Hexo 3.8.0">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Description-->
-    
-        <meta name="description" content="blog">
-    
-
-    <!--Author-->
-    
-        <meta name="author" content="jklee@lenscloth.io">
-    
-
-    <!--Open Graph Title-->
-    
-        <meta property="og:title" content="lenscloth.io blog">
-    
-
-    <!--Open Graph Description-->
-    
-        <meta property="og:description" content="blog">
-    
-
-    <!--Open Graph Site Name-->
-    <meta property="og:site_name" content="lenscloth.io blog">
-
-    <!--Type page-->
-    
-        <meta property="og:type" content="website">
-    
-
-    <!--Page Cover-->
-    
-
-    <meta name="twitter:card" content="summary">
-    
-
-    <!-- Title -->
-    
-    <title>page - lenscloth.io blog</title>
-
-    <!-- Tachyons Core CSS -->
-    <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-131406012-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-
-</head>
-
-
-<body>
-
-<!-- Main Content -->
-<!-- Banner -->
-<!-- Banner -->
-<div class="w-100 bg-1 ph5-ns ph3 text-light">
-    
-    <nav class="db dt-l w-100 mw8 center border-box pv3">
-        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/" title="lenscloth.io blog">
-            <img src="/images/common/lenscloth.svg" class="dib h3" alt="lenscloth.io blog">
-        </a>
-        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-            
-                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="/" title="Home">
-                    Home
-                </a>
-            
-                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="/archives" title="Archives">
-                    Archives
-                </a>
-            
-                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="/tags" title="Tags">
-                    Tags
-                </a>
-            
-                <a class="link dim f6 f5-l dib mr3 mr4-l white" href="/categories" title="Categories">
-                    Categories
-                </a>
-            
-        </div>
-    </nav>
-
-    <!-- Title -->
-    <div class="w-100 mw8 center vh-40 dt">
-        <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">lenscloth</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">TASK TRACKING/LOGGING SOFTWARE</p>
-        </div>
-    </div>
-
-    <!-- Icon -->
-    <div class="relative w-100 mw8 center white dn dn-m db-ns">
-        <i class="header-icon fa fa fa-connectdevelop"></i>
-    </div>
-</div>
-
-<!-- Content -->
-<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
-    <div class="content">
-        <div class="mw8 center">
-            
-                <a href="/2018/10/11/Lot-No-Batch-No/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2018-10-11</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Lot-No/'; return false;">#Lot No</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Batch-No/'; return false;">#Batch No</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Lot No, Batch No<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-industry"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2018/10/10/Barcode/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2018-10-10</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Barcode/'; return false;">#Barcode</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Barcode<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-barcode"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2018-10-10</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MES/'; return false;">#MES</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MES(생산관리시스템, Manufacturing Execution System)<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-industry"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2017/05/30/Twilio-SMS/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2017-05-30</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Twillo/'; return false;">#Twillo</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/SMS/'; return false;">#SMS</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Twilio SMS<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2016/01/25/Life-Cycle-of-TempData-in-ASP-Net-MVC/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2016-01-25</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MVC4/'; return false;">#MVC4</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/TempData/'; return false;">#TempData</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/C/'; return false;">#C#</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Life Cycle of TempData in ASP.Net MVC<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2015/12/03/MSSQL-sp-send-dbmail-Transact-SQL/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2015-12-03</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/db-mail/'; return false;">#db mail</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/SP-SEND-DBMAIL/'; return false;">#SP_SEND_DBMAIL</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MSSQL-sp_send_dbmail(Transact-SQL)<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-database"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2015/10/26/MS-Outlook-Email-관리-AddIn-4/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2015-10-26</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MS-Office-AddIn/'; return false;">#MS Office AddIn</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Outlook/'; return false;">#Outlook</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MS Outlook Email 관리 AddIn - 4<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2015/10/25/MS-Outlook-Email-관리-AddIn-3/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2015-10-25</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MS-Office-AddIn/'; return false;">#MS Office AddIn</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Outlook/'; return false;">#Outlook</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MS Outlook Email 관리 AddIn - 3<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2015/10/24/MS-Outlook-Email-관리-AddIn-2/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2015-10-24</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MS-Office-AddIn/'; return false;">#MS Office AddIn</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Outlook/'; return false;">#Outlook</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MS Outlook Email 관리 AddIn - 2<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2015/10/23/MS-Outlook-Email-관리-AddIn-1/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2015-10-23</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MS-Office-AddIn/'; return false;">#MS Office AddIn</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Outlook/'; return false;">#Outlook</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">MS Outlook Email 관리 AddIn - 1<span>
-        </span></span></div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-code"></i>
-        </div>
-    </div>
-</a>
-            
-        </div>
-    </div>
-    
-    <div class="flex items-center justify-center pa4">
-        <a href="/page/2/" class="f5 no-underline inline-flex items-center pa3 ba border-box mr4 gray hover-border-main-color hover-text-main-color">
-            <i class="w1 pr2 fa fa-chevron-left" aria-hidden="true"></i>
-            <span class="pl1">Previous</span>
-        </a>
-        <a href="/page/4/" class="f5 no-underline inline-flex items-center pa3 ba border-box gray hover-border-main-color hover-text-main-color">
-            <span class="pr1">Next</span>
-            <i class="w1 pl2 fa fa-chevron-right" aria-hidden="true"></i>
-        </a>
-    </div>
-
-</div>
-
-
-<!-- Footer -->
-<div class="bg-1 ph2 ph5-ns pv5">
-        <div class="mv8">
-            <div class="center tc">
-                
-                    <div class="dib mh3">
-                        <a class="f3 f2-ns white dim" href="https://www.facebook.com/lensclothkorea/" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </div>
-                
-                    <div class="dib mh3">
-                        <a class="f3 f2-ns white dim" href="https://github.com/lenscloth-ko" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </div>
-                
-                    <div class="dib mh3">
-                        <a class="f3 f2-ns white dim" href="mailto:jklee@lenscloth.io" target="_blank">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                    </div>
-                
-                    <div class="dib mh3">
-                        <a class="f3 f2-ns white dim" href="/#" target="_blank">
-                            <i class="fa fa-rss"></i>
-                        </a>
-                    </div>
-                
-            </div>
-            <div class="f6 f5-ns center tc white pt5 fw3">
-                @lenscloth korea. All right reserved | Design & Hexo <a class="link dim white" href="http://www.lenscloth.io/">lenscloth.io</a>
-            </div>
-        </div>
-    </div>
-
-<!-- After Footer -->
-<!-- Disqus Comments -->
-
-
-
-</body>
-
-</html>
+ga('create', 'UA-131406012-1', 'auto');
+ga('send', 'pageview');</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">jklee@lenscloth.io</div><div class="author-info__description text-center">blog</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">37</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">60</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">9</span></a></div></div></div><nav class="no-bg" id="nav" style="background-image: url(true)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">lenscloth.io blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span></div><div id="site-info"><div id="site-title">lenscloth.io blog</div><div id="site-sub-title">lenscloth v2 dev</div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item article-container"><a class="article-title" href="/2018/10/15/BOM-Bill-Of-Material-자재명세서/">BOM(Bill Of Material, 자재명세서)</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-10-15</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/MES/">MES</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/BOM/">BOM</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Bill-Of-Meterial/">Bill Of Meterial</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/자재명세서/">자재명세서</a></span><div class="content"><blockquote><p>자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립 품인 경우에는 계층적인 구조로 작성될 수 있다.</p>
+<footer><strong>위키</strong><cite><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%AC_%EB%AA%85%EC%84%B8%EC%84%9C" target="_blank" rel="noopener">자재 명세서</a></cite></footer></blockquote>
+<p>BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태 같습니다.</p>
+<p>BOM과 처방전을 화학에서는 같이 사용하던데 느낌상 BOM은 최초 발행된 조합 정보이며 처방전은 실제 생산하면서 배합 양 비율 등이 조정되는 업데이트 되는 정보라고 이해하고있습니다.</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2018/10/11/Lot-No-Batch-No/">Lot No, Batch No</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-10-11</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/MES/">MES</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Lot-No/">Lot No</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Batch-No/">Batch No</a></span><div class="content"><blockquote><p>제조단위는 동일한 조건 아래에서 만들어진 균일한 특성 및 품질을 갖는 제품군이다. 로트(lot), 배치(batch)라고도 한다. 제조단위를 나타내는 번호를 제조단위번호라고 하며 제조번호, 로트번호(lot number), 배치번호(batch number)라고도 한다.</p>
+<footer><strong>위키</strong><cite><a href="https://ko.wikipedia.org/wiki/%EC%A0%9C%EC%A1%B0_%EB%8B%A8%EC%9C%84" target="_blank" rel="noopener">제조 단위</a></cite></footer></blockquote>
+<p>흠..제일 많이 듣는말 중에 하나인 듯하고 역시 lot tracking (로트 추적)에 관련된 대화 이슈들이 많이 들립니다.</p>
+<p>lot number (로트 번호)가 같다 라는 개념을 1개의 공정에서 나온 결과물에 부여되는 일련번호 라고 이해하고있는 상황이며</p>
+<p>AAA 라는 고유제품코드를 가진 제품이 있으며</p>
+<p>이것이 3개의 라인(같은 공정)에서 생산되고있으면<br>1라인 : AAA-01<br>2라인 : AAA-02<br>3라인 : AAA-03<br>이런 식으로 구분한다 라는 정도로 이해하고 있습니다 ㅋㅋ 맞나 ㅠㅠ</p>
+<p>lot 번호를 부여하는 방식은 기업마다 Rule을 정해서 부여하는듯 하며 이를 통합 Barcode시스템연동시 부여된 번호를 관리하는 포인트가 생기는듯 합니다.</p>
+<p>lot 번호의 목적은 역으로 추적하기 위함이 가장 많은 듯 하다(현재 까지 종합해본 결론은…), 불량이 나거나 결과물에 문제 발생시</p>
+<p><em>몇 날 몇일 몇시즈음에 어느 공정에서 문제가 생긴 건지</em> 를 알기 위함이 가장 크게 적용되는듯 합니다…</p>
+<p>Batch = 생산계획에 의해 한번 셋팅으로 생산하는 단위<br>Lot = 그 Batch에 이어 나오는 제품 단위를 의미</p>
+<p>아직은 이렇게 이해하고 접근하고 있지만 마침 제가 담당하게 될 부분이 통합라벨관리(채번까지인지 ..ㅠ?)가 되어서 앞으로 도 확실히 정리해야 하겠습니다~</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2018/10/10/Barcode/">Barcode</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-10-10</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/MES/">MES</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Barcode/">Barcode</a></span><div class="content"><img src="/images/2018/interleaved2of5.jpg" class="center" title="barcode">
+<p>바코드는 1948년 미국에서 발명했다고 합니다.</p>
+<p>다양한 폭을 가진 Bar(검은 막대부분)와 Space(흰색막대?)의 배열 패턴입니다, 조합에 의해 영 숫자, 기호 등을 광학적으로 판독하기 쉽게 부호화 한 것 입니다.</p>
+<p>2진 코드로 부호화 해서 Bar와 Space의 농도,굵기를 다르게 표함으로써 “0”, “1”을 나타내는 직렬신호의 조합으로 표현됩니다.<br><blockquote><p>1970년대 초반 IBM 사는 음식 포장지에 스캐너로 가격과 음식 정보를 판독할 수 있는 코드를 디자인해 달라는 주문을 받았습니다. 당시 이 일을 맡았던 IBM사의 엔지니어 조지 로러(George Laurer) 씨는 1940년대에 조셉 우드랜드(Joseph Woodland) 씨가 개발한 황소의 눈동자 모양으로 생긴 원형의 스캔 코드를 기반으로 하라는 요청을 받았습니다. 하지만 그는 이 원형 코드에서 문제점을 발견했습니다. 고속 인쇄기로 원모양의 스캔 코드를 포장지에 인쇄할 경우 원의 모양 중 훼손되는 부분이 발생할 확률이 크고 스캐너가 이를 인식하지 못할 가능성이 커지는 겁니다. 따라서 그는 좁고 긴 막대 모양의 코드를 발명했습니다. 로러 씨가 발명한 새로운 코드는 바코드라고 더 잘 알려진 통일 상품코드(Universal Product Code)로 1973년 식료품점 컨소시엄이 채택한 이후 전 세계에서 이용되고 있습니다. 바코드를 개발하게 된 배경에 대해서 로러 씨는 자신의 실수 때문에 가격이 찍히지 않을까 두려워하는 식료품 점원들이 있었다고 말합니다. 예를 들어 냉동 식품을 다루는 사람들은 제품에 얼음이 붙어 있어 제품의 가격이 잘 찍히지 않을 경우 그것이 자신의 탓으로 여겨지는 것이 두려워 제품의 특성이나 환경에 관계 없이 가격을 확인할 수 있는 시스템을 원했고 이렇게 해서 바코드가 탄생하게 된 것입니다. 로러 씨는 사람들에게 자신이 바코드를 발명했다고 말하면 돈을 많이 벌었을 것이라고 가정하지만 실제로 그는 아무런 저작권료를 받지 않았습니다. IBM 역시 이를 특허로 신청하지 않았습니다.</p>
+<footer><strong>NewsPeppermint</strong><cite><a href="http://newspeppermint.com/2013/01/06/%EB%B0%94%EC%BD%94%EB%93%9C%EB%8A%94-%EB%88%84%EA%B0%80-%EB%B0%9C%EB%AA%85%ED%96%88%EB%82%98/" target="_blank" rel="noopener">바코드는 누가 발명했나?</a></cite></footer></blockquote><br>사실 뭐가 맞는 말이던간에 Barcode에 대한 공부를 위한 기분 전환입니다 ㅋ..</p>
+<p>결국 바코드는 컴퓨터가 2진수로 인식할 수 있게 만든 것입니다, 이를 스캐너를 통하여 읽을 수 있는데 검은 부분은 빛을 흡수해서 적은 양을 반사하고, 흰 부분은 많은 양의 빛을 반사합니다.</p>
+<p>스캐너는 아날로그 - 디지털 변환기가 있어서 이를 통해 빛의 강약에 따라 전기신호로 변경되고 이 신호가 0,1 로 변환되어 다시 우리가 보는 문자 혹은 숫자로 나타나게 됩니다.<br><img src="/images/2018/170E841E4CCAA59850.jpg" class="center" title="원리"><br>자세한 설명은 위의 링크에서 잘 설명되어 있습니다, 저도 참고하고 공부중 입니다.</p>
+<p>바코드 표준<br>기본 원리는 그렇다 치고 이를 실제 사용하거나 주고 받기위해서는 역시나 표준이 필요합니다.</p>
+<p>바코드 자체의 전체 길이도 어느정도는 표준화 하지 않고 서는 리더기 장비를 만드는 업체는 여러 사이즈의 기계를 만들어야 하는 기본적인 비합리 함이 발생되기 때문이기도 하고 표준을 정하지 않고 사용하면 입출력의 시간을 줄이고 편리하게 사용하고자 하는 취지역시 이상한 방향으로 돌아가게 되지 않았을까 싶습니다.</p>
+<p>역시 뭐든 표준이 정해지는 건 중요하다고 생각합니다 . ㅎ_ㅎ<br>정말 표준이라고 해도 역시 많은 표준이 있는데…<br>1973년 미국음식연쇄조합에서 세계상품코드(UPC)를 도입한 게 처음이고 등등등 가다가!</p>
+<p>1988년 EAN국제기구에 가입하면서 우리나라는 국가 번호코드 880을 부여 받아 한국상품번호를 사용하고 있습니다, 이후에는 통합통합 하더니 미국과 유럽이 통합된 국제 표준코드인 GS1체계가 2005년 출범하였다고 합니다.</p>
+<p>이후에는 실제 각 표준에 대한 내용과 바코드를 만들기 위한 공부를 정리 예정입니다.</p>
+<p>감사합니다.</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2018/10/10/MES-생산관리시스템-Manufacturing-Execution-System/">MES(생산관리시스템, Manufacturing Execution System)</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-10-10</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/MES/">MES</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MES/">MES</a></span><div class="content"><p>MES는 Manufacturing Execution System 의 약어라고 합니다.</p>
+<p>생산관리시스템 / 제조실행시스템 으로 불리고 있더라고요 정확한 표현은 추후에 라도 업데이트 하겠습니다.</p>
+<p>우선 저처럼 MES의 약어가 무엇인가 부터 찾으시는 분들을 위해 제가 먼저 검색해보고 잘 이해가 되었던 링크를 하나 공유해 드리겠습니다.</p>
+<p>미라콤 이라는 회사 웹사이트에 가보면 다양한 정보가 있더라고요<br>특히 MES란 무엇인가? 라는 카툰으로 된 설명이 이해하기가 쉬웠습니다.<br>참고로 전 이 기업과 전혀 관계가 없습니다!</p>
+<p>처음에는 공장자동화(Factory Automation)? 비스 무리한 개념으로 접근을 했었 습니다…<br>사실 관점에 따라 다르겠지만(저도 검색하다 보니 엄청 난감하고 아직도 정리가 안 끝나더라고요)</p>
+<p>비슷하게 혼동이 가던 개념이 스마트팩토리(Smart Factory) 였습니다…<br>이걸 사무환경으로 그대로 옮겨서 이해를 하려고 노력을 해봤는데요…이렇습니다….</p>
+<p>사무자동화(Office Automation)와 스마트오피스(Smart Office)? 가 있다고 가정을 하고 -_-;</p>
+<p>회사에서 연/월차 등의 업무처리에 인쇄물 직접 서면보고 형식의 프로세스를 가지고있다 라고 가정을 해 봤습니다(요즘은 잘 없겠죠~?)…제가 이런 프로세스의 회사에서 초창기에 근무한적이 있었습니다…</p>
+<p>누가 힘드냐!!!</p>
+<p>가야할 사람 : 결제권자 만나기 겁나 힘들고 이거 들고가면 꼭 이상한 일정체크와 농담해서 사람 민망하게 합니다..<br>결제권자 : 허…이놈이 분명 내일까지 할일이 있는데…계속 찾아와서 좀 쉬자고 들이댑니다…<br>경리부 대리누나(그땐 막내였거든요 ㅎ) : 연말마다 연차보상비 계산하느라 며칠밤 집에도 못 가고 계산기 다 뚜드리고 정리 끝나서 갈려고 하면 “아 찾았어요 이러고 겁나들 몰려옵니다 - _-좀비WAR!!”<br>경리부 책임이사님 : 경리부 대리누나한테 이 아이는 왜 우리회사 지급일수보다 3일을 더 쉬었니? 라며 보상비를 받아오라 하십니다 ㅋㅋㅋㅋ<br>그냥 억울한 사람 : 분명 그날 제출도 하고 결제도 하고 다했는데….그날 급한업무 때문에 못 쉬었는데….그날이 몇일이었는지…(월요일날 출근해서 토요일 점심 먹고 집에 가고 이랬는데!!!) 기억이 안나 서 그냥 쉰 걸로 치고 마음을 비웠더니 경리부 책임이사님이 보상비 내노라고 버럭버럭 하십니다 ㅋㅋ<br>사장님 : 내 돈이….이것들 양심에 따라 지급되는 느낌이라 자선사업가가 된 느낌입니다 ;;<br>웃자고 쓴…..실화입니다 ㅡㅡ……..이직 후에는 그룹웨어가 잘(?) 되어있어서 이런 일들이 모두 전자결제를 통한 업무처리 프로세스가 도입되어 있었습니다.</p>
+<p>이로써 위에 해프닝에서 일어난 누수라고 볼 수 있는 것들(시간/인력, 부정확한 정보로 인한 데이터 관리불가와 정보의 신뢰도 하락 등등등등등….)을 막을 수 있는 좋은 패러다임이 사무자동화의 한 축이었다고 생각할 수 있다..라고 저는 생각해 봅니다 이를 공장자동화로 매칭 을 시켜봤습니다..물론 많은 차이가 있고 전문분야도 아니기때문에 어설프게 이해한 상황일지도 모릅니다.</p>
+<p>이번엔 정말 이해를 위한 억지 이해를 써야할 듯 해서 죄송스럽지만….적어보겠습니다</p>
+<p>어떤 웹사이트 프로젝트가 기획/개발/디자인/퍼블리싱 구간 어디까지 진행되고있는지를 회의에서 물어 보시는 사장님의 기습공격을 받은 사람이 어……..그룹웨어에는 지금 투입인력 전체비용 프로젝트기간 외에는 그런 자세한 정보가 나와있지 않아서 나와있고 아는 부분만 답변을 하게 됩니다……당연히 알아야하는 PM역활 등의 사람들이야 숙지하고 있겠지만 외에 관련자/확인자 등은 확인하려면 역시나 해당 관련업무 숙지자를 만나야 정확한 상황을 파악 할 수 있습니다.</p>
+<p>이는 역시 또다른 투입인력과 인력운영에 여러가지 누수가 생기게 됩니다(직원들이야 좋죠 ㅋㅋㅋㅋ…그런데 회사 망하면 힘들잖아요 ㅠㅠ), 이에 스마트 오피스라는 프로세스를 도입하기로 마음먹고 이에 각 직군 별 자세한 진행상황을 확인할 수 있게 됩니다..이는 투입인력이 과부하 상황에서 어려움을 겪는지 혹은 과 투입되어 비용이 낭비되고있는지 등의 확인이 수월해 질 수 있습니다.</p>
+<p>이를 즉 스마트 오피스로 대입해서 이해한 상황입니다.</p>
+<p>정말 말이 앞뒤도 안 맞고 이상하다고 저도 느끼지만…저는 아직 이정도 수준이라 ㅠㅠ</p>
+<p>크흠…급 정색하지만</p>
+<p>MES는 이러한 스마트오피스 와 완전 일치되는 개념은 아닌 듯 하지만 별개로</p>
+<p>해당 공정을 정보화 하며 모니터링하고 문제(제품의 품질, 공정상 불량)를 추적 가능하게 하는 시스템에 속하는 하나의 작은 서브 시스템 이라고 이해하고 시작하기로 했습니다.</p>
+<p>와서 진짜 깜짝 놀란건 모든 용어가 처음 듣고 용어들을 모르면 대화가 어렵다는 점 이었습니다, 지금은 다행이 PI기간이고 제가 적응할 시간이 있는 참이어서 디테일한 정보습득을 정말 부지런하게 메모하고있는 와중입니다, 아마 용어만 정리해도 엄청날 듯 합니다…QMS, WMA, ERP, Silo, 등등등..수도 없습니다..ㄷㄷㄷㄷㄷ</p>
+<p>앞으로도 정리하면서 공부하겠지만 처음이니 만큼 사설이 반인 듯 했네요…….</p>
+<p>많은 지적 부탁드리고 첫 기고 글에서 많은 변화가 있으리라 생각합니다(정확한 개념을 잡으면 수정하겠습니다).</p>
+<p>읽어 주셔서 감사합니다.</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2017/05/30/Twilio-SMS/">Twilio SMS</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2017-05-30</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/">C#.Net</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Twillo/">Twillo</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/SMS/">SMS</a></span><div class="content"><img src="/images/2017/outgoing-sms.width-800.png" class="center" width="500" title="Twillo">
+<p>Twillo를 사용해서 SMS를 공짜로 보내보자..(이제는 공짜가 아닙니다..) 가 취지였습니다.</p>
+<p>Azure계정을 사용해서 가입합니다.<br><img src="/images/2017/twilio_01.png" class="center" title="twilio_01"><br><img src="/images/2017/twilio_02.png" class="center" title="twilio_02"><br><img src="/images/2017/twilio_03.png" class="center" title="twilio_03"><br><img src="/images/2017/twilio_04.png" class="center" title="twilio_04"><br>역시나 아무 의미없는 맘에도 없는 환영을 받습니다..ㅋㅋ</p>
+<p>그럼 Twilio 콘솔에서 이것저것 처음사용자용 메뉴를 한참 보게끔 합니다..한번 둘러보시면 됩니다…<br>나중에 데시보드에서 Account SID, Auth Token을 받을 수 있습니다. 일단 여기까지만 받으시면 다음 개발로 넘어가겠습니다.</p>
+<p>asp.net Console응용프로그램 프로젝트를 그냥 만드신 후에<br>위에 넣어드린 참고링크를 그대로 따라하시면 됩니다.<br>지금 Azure 가입자 대상 Twilio 가입을 받으면 10$를 넣어주는 공짜 서비스를(2017-05-30 현재 기준…나중에 원망 마세요) 행사중(?) 이네요 ㅎ</p>
+<p>콘솔 응용프로그램에서의 코딩은 상당히 간단합니다..<br><figure class="highlight csharp"><figcaption><span>Sample</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> Twilio;</span><br><span class="line"><span class="keyword">using</span> Twilio.Rest.Api.V2010.Account;</span><br><span class="line"><span class="keyword">using</span> Twilio.Types;</span><br><span class="line"><span class="keyword">namespace</span> <span class="title">HelloTwilio</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="comment">// Find your Account Sid and Auth Token at twilio.com/console</span></span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">string</span> accountSid = <span class="string">"본인 Sid"</span>;</span><br><span class="line">            <span class="keyword">const</span> <span class="keyword">string</span> authToken = <span class="string">"본인 토큰"</span>;</span><br><span class="line">            TwilioClient.Init(accountSid, authToken);</span><br><span class="line">            <span class="keyword">var</span> to = <span class="keyword">new</span> PhoneNumber(<span class="string">"+821071706020"</span>);</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">var</span> message = MessageResource.Create(</span><br><span class="line">                to,</span><br><span class="line">                <span class="keyword">from</span>: <span class="keyword">new</span> PhoneNumber(<span class="string">"+12563054160"</span>),</span><br><span class="line">                body: <span class="string">"Twilio 에서 보냅니다!!!!"</span>);</span><br><span class="line">                Console.WriteLine(message.Sid);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception e)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(e.Message);</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>물론 Nuget에서 Twilio 당연히 추가 하셨어야 합니다.<br>제가 왜 Twilio 서비스에 관심을 가지게 되었냐면…. 어떤분이 비용도 비싸다고 하시는데</p>
+<p>사실<br><a href="https://www.twilio.com/docs/guides/how-to-send-bulk-sms-messages-in-csharp" title="target=_blank" target="_blank" rel="noopener">참고링크</a><br>이부분 때문입니다……<br>이게 과연 기존 SMS전송방식(웹서버 혹은 분할전송에 매번 비용을 지불하면서 사용하는)서비스를 이용하지 않아도 Azure호스팅 혹은 AWS호스팅에서 1개의 서비스로서<br>활용도가 있을까를 앞으로 알아보려고 이렇게 삽질아닌 초간단 삽질을 해 보았습니다..ㅎㅎ</p>
+<p>꼭 해보고 비용까지 비교한(저의 고객사 기준 사용 업체별!!) 내용까지 공유드릴 수 있도록 노력해보겠습니다.!!<br><img src="/images/2017/twilio_05.jpg" class="center" title="twilio_05"><br>혹시모르니 인증샷 ㅎ?</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2016/01/25/Life-Cycle-of-TempData-in-ASP-Net-MVC/">Life Cycle of TempData in ASP.Net MVC</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2016-01-25</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Web/">Web</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/Web/ASP-Net-MVC/">ASP.Net MVC</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MVC4/">MVC4</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/C/">C#</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/TempData/">TempData</a></span><div class="content"><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ActionResult <span class="title">ViewInfo</span>(<span class="params"><span class="keyword">string</span> memId, CommonModel param</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//파라미터가 없는 접근을 차단</span></span><br><span class="line"><span class="keyword">if</span> (!NoParamValueCheck(memId))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">return</span> RedirectToAction(<span class="string">"NoParameterValue"</span>, <span class="string">"Home"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">MemberView M = <span class="keyword">new</span> MemberView</span><br><span class="line">&#123;</span><br><span class="line">CommonParam = param</span><br><span class="line">,</span><br><span class="line">MemberInfo = _MemberService.MemberView(memId, MemberInfo.GetMemberGradeCode(), param)</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//의도적인 예외처리</span></span><br><span class="line"><span class="keyword">if</span> (M.MemberInfo == <span class="literal">null</span>)</span><br><span class="line">&#123;</span><br><span class="line">CustomLog4Net customLog = <span class="keyword">new</span> CustomLog4Net();</span><br><span class="line">customLog.ErrorToLog(<span class="keyword">this</span>.ControllerContext);</span><br><span class="line"><span class="keyword">return</span> RedirectToAction(<span class="string">"WrongParameterValue"</span>, <span class="string">"Home"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">return</span> View(M);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>상세화면 -&gt; 수정화면 -&gt; 수정완료 -&gt; 다시 상세화면 이라는 시나리오상에서 void형 EditProc Controller를 사용했지만 실제로 프로시저에서는 @returnValue 라는 int형 결과를 리턴 하는 상황입니다 Model에서 부터 out Parameter로 결과를 받는 변수를 받아왔으며 실제 EditProc Controller는<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> RedirectToAction(<span class="string">"ViewInfo"</span>, <span class="keyword">new</span> &#123; memId = dto.memId, viewParam = param &#125;);</span><br></pre></td></tr></table></figure><br>를 리턴 합니다, 이때 ViewBag으로 결과값을 유지할 줄…알았습니다 이게 저에게는 애매한 부분 이었어서 TempData로 경했던 과정과 이유를 남겨놓습니다.<br>html bootstrap template 같은 거 찾아보면 1회 휘발성 notification box 등을 많이 제공하더라고요 PHP나 Classic ASP같은거로 작업한다고 하면 catch처리를 했던 기억이 있네요…왜 그렇게 무식하게 했었을까요….그게 더 공수가 들어갔거든요..<br>각설하고 View.cshtml에서<br><figure class="highlight csharp"><figcaption><span>view.cshtml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resultNum TempData : @TempData[<span class="string">"resultNum"</span>]</span><br></pre></td></tr></table></figure><br>이렇게 TempData를 호출하면 새로고침시 정보가 사라지는 현상을 볼 수 있습니다…<br><img src="/images/2016/life_01.png" class="center" title="Life Cycle of TempData in ASP.Net MVC"><br>여기서 TempData의 구간은 Controller <-> Controller 이렇게 명시되어 있습니다, ViewBag, ViewData와는 확실히 용도가 분리되어 있습니다.<br>TempData.Keep 등으로 생명 주기를 연장도 가능합니다, 그런데..특별한 사유가 아니라면 사용할 일이 없어 보이네요.<br>사실 말이 거창합니다만..<br>아래와 같은 시나리오 입니다..<br><img src="/images/2016/life_02.png" class="center" title="check"></-></p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2015/12/03/MSSQL-sp-send-dbmail-Transact-SQL/">MSSQL-sp_send_dbmail(Transact-SQL)</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2015-12-03</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/DB/">DB</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/DB/MSSQL/">MSSQL</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/db-mail/">db mail</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/SP-SEND-DBMAIL/">SP_SEND_DBMAIL</a></span><div class="content"><p>MSSQL에서 자동메일을 특별한 양식없이 알림성으로 받기 좋은 방법이 있습니다, sp_send_dbmail 이라고 하는 놈인데요 이게 express버전에서는 메뉴가 없습니다, 정품을 사용하고 설치옵션에서 해당사항을 체크해야 보이더라고요<br><img src="/images/2015/sp_send_dbmail_01.png" class="center" title="sp_send_dbmail_01"><br>데이터베이스 메일 &gt; 데이터베이스 메일구성 에서 없으면 등록하면 됩니다<br><img src="/images/2015/sp_send_dbmail_02.png" class="center" title="sp_send_dbmail_02"><br>설정은 끝입니다, POP3 설정이랑 비슷하죠? 당연히 SMTP설정은 되어있어야 합니다.<br>SQL Server 에이전트 설정을 해주시면 됩니다 이제<br><img src="/images/2015/sp_send_dbmail_03.png" class="center" title="sp_send_dbmail_03"><br>이후 Batch Job을 걸어서 호출하는 방식 입니다.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">sp_configure '<span class="keyword">show</span> <span class="keyword">advanced</span> options<span class="string">', 1</span></span><br><span class="line"><span class="string">sp_configure '</span><span class="keyword">show</span> <span class="keyword">advanced</span> options<span class="string">', 1</span></span><br><span class="line"><span class="string">go</span></span><br><span class="line"><span class="string">reconfigure</span></span><br><span class="line"><span class="string">go</span></span><br><span class="line"><span class="string">sp_configure '</span><span class="keyword">Database</span> Mail XPs<span class="string">',1</span></span><br><span class="line"><span class="string">go</span></span><br><span class="line"><span class="string">reconfigure</span></span><br><span class="line"><span class="string">go</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">use msdb</span></span><br><span class="line"><span class="string">go</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">declare @body_str varchar(2000);</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">set @body_str = '</span>메일이 <span class="string">' + @@SERVERNAME + '</span>로 부터 발송되었습니다.<span class="string">'</span></span><br><span class="line"><span class="string">set @body_str = @body_str + ''</span></span><br><span class="line"><span class="string">set @body_str = @body_str + '</span>발송 시간 : <span class="string">' + cast(getdate() as varchar(20)) + ''</span></span><br><span class="line"><span class="string">set @body_str = @body_str + '</span>발송 머신 : <span class="string">' + HOST_NAME() + ''</span></span><br><span class="line"><span class="string">set @body_str = @body_str + ''</span></span><br><span class="line"><span class="string">set @body_str = @body_str + '</span>감사합니다.<span class="string">'</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">exec msdb.dbo.sp_send_dbmail</span></span><br><span class="line"><span class="string">    @profile_name = '</span>UserEmailSender<span class="string">'</span></span><br><span class="line"><span class="string">    ,@recipients = '</span>jklee@wylie.co.kr<span class="string">'</span></span><br><span class="line"><span class="string">    ,@subject = '</span>데이터베이스 메일 보내기 테스트<span class="string">'</span></span><br><span class="line"><span class="string">    ,@body = @body_str</span></span><br><span class="line"><span class="string">    ,@body_format = '</span>html<span class="string">';</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">----------결과조회</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">use msdb</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">select *</span></span><br><span class="line"><span class="string">from sysmail_mailitems</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">select *</span></span><br><span class="line"><span class="string">from sysmail_log</span></span><br></pre></td></tr></table></figure><br>결국 메일에 따라서 스팸으로 가기도 하겠지만 양식 맞추는게 노가다성으로 보여지긴 합니다만 저는 이거 하나로 매일 받아야하는 알림을 약 2년여간 아주 잘 활용했었습니다.</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2015/10/26/MS-Outlook-Email-관리-AddIn-4/">MS Outlook Email 관리 AddIn - 4</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2015-10-26</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/">C#.Net</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/VSTO/">VSTO</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MS-Office-AddIn/">MS Office AddIn</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Outlook/">Outlook</a></span><div class="content"><img src="/images/2015/04_01.png" class="center" title="Working Scenario">
+<img src="/images/2015/04_02.png" class="center" title="Working Scenario">
+<img src="/images/2015/04_03.png" class="center" title="Working Scenario">
+<img src="/images/2015/04_04.png" class="center" title="Working Scenario">
+<p>크흛..<br>정말 별거 아니네요…그래도 좋은 공부였습…크흛..ㅠㅠ</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2015/10/25/MS-Outlook-Email-관리-AddIn-3/">MS Outlook Email 관리 AddIn - 3</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2015-10-25</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/">C#.Net</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/VSTO/">VSTO</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MS-Office-AddIn/">MS Office AddIn</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Outlook/">Outlook</a></span><div class="content"><img src="/images/2015/outlook_layout_02.png" class="center" title="Layout Result">
+<p>ManageTaskPeneRibbon 메뉴로 I/F는 XML로 XML은 Web프로젝트 얼른 하나 만들어서 거기서 대충 관리하는 식으로 만들었습니다..</p>
+<ul>
+<li><a href="/2015/10/23/MS-Outlook-Email-관리-AddIn-1/" title="MS Outlook Email 관리 AddIn - 1">MS Outlook Email 관리 AddIn - 1</a></li>
+<li><a href="/2015/10/24/MS-Outlook-Email-관리-AddIn-2/" title="MS Outlook Email 관리 AddIn - 2">MS Outlook Email 관리 AddIn - 2</a></li>
+<li><a href="/2015/10/25/MS-Outlook-Email-관리-AddIn-3/" title="MS Outlook Email 관리 AddIn - 3">MS Outlook Email 관리 AddIn - 3</a></li>
+<li><a href="/2015/10/26/MS-Outlook-Email-관리-AddIn-4/" title="MS Outlook Email 관리 AddIn - 4">MS Outlook Email 관리 AddIn - 4</a>
+</li>
+</ul>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2015/10/24/MS-Outlook-Email-관리-AddIn-2/">MS Outlook Email 관리 AddIn - 2</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2015-10-24</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/">C#.Net</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/C-Net/VSTO/">VSTO</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/MS-Office-AddIn/">MS Office AddIn</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Outlook/">Outlook</a></span><div class="content"><img src="/images/2015/outlook_layout.png" class="center" title="Layout Test">
+<p>이런식으로..새 전자 메일 작성시 우측에 트리구조로…넣습니다..<br>벼..별거 아닌듯 보입니다 ㅠㅠ</p>
+<ul>
+<li><a href="/2015/10/23/MS-Outlook-Email-관리-AddIn-1/" title="MS Outlook Email 관리 AddIn - 1">MS Outlook Email 관리 AddIn - 1</a></li>
+<li><a href="/2015/10/24/MS-Outlook-Email-관리-AddIn-2/" title="MS Outlook Email 관리 AddIn - 2">MS Outlook Email 관리 AddIn - 2</a></li>
+<li><a href="/2015/10/25/MS-Outlook-Email-관리-AddIn-3/" title="MS Outlook Email 관리 AddIn - 3">MS Outlook Email 관리 AddIn - 3</a></li>
+<li><a href="/2015/10/26/MS-Outlook-Email-관리-AddIn-4/" title="MS Outlook Email 관리 AddIn - 4">MS Outlook Email 관리 AddIn - 4</a>
+</li>
+</ul>
+</div><hr></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-chevron-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2019 By jklee@lenscloth.io</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script></body></html>
