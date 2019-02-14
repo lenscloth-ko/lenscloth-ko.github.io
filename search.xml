@@ -78,13 +78,13 @@
       
         <tags>
             
-            <tag> 화학 </tag>
-            
-            <tag> 기초소재 </tag>
-            
             <tag> EPS </tag>
             
             <tag> 스티로폼 </tag>
+            
+            <tag> 화학 </tag>
+            
+            <tag> 기초소재 </tag>
             
         </tags>
       
@@ -176,7 +176,7 @@
       <link href="/2018/10/31/Backflush/"/>
       <url>/2018/10/31/Backflush/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>간단히 말해 선 집행 후 처리 라고 보면 될 듯 합니다.<br>빈번하게 나가는 재고를 일일이 기록하면서 보관하면 기록하는데 낭비되는 시간이 많을 것.<br>이 때문에 빈번하게 나가는 재고를 우선 작업을 하고 나서 나중에 처리를 한다고 생각하면 되겠습니다.</p><p>backflush는 재고 불출의 한 방법입니다.<br>생산은 Input을 output으로 바꾸는 것을 의미합니다.<br>즉 order을 하게 되면 input의 부품은 재고에서 사라지고 가치가 부과된 제품이 나오는 거죠.<br>이를 재고 장부 측면에서 보면 부품은 불출(issue)되어야 하고 새로운 제품이 입고(receipt)되어야 하죠.<br>이를 처리하는 간단한 방법이 backflush입니다.<br>제품이 완성되면 해당 order에 필요한 자재를 BOM과 같은 소요자재목록표를 이용해 자동으로 해당 수량만큼 불출하는 것입니다.<br>원래는 반복생산에서 나왔지만 편리성 때문에 주문제작(make-to-order)방식에서도 많이 사용하고 있습니다.</p><footer><strong>NAVER Blog</strong><cite><a href="http://blog.naver.com/PostView.nhn?blogId=wjdwodn1119&logNo=70162938290" target="_blank" rel="noopener">Backflush</a></cite></footer></blockquote>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>간단히 말해 선 집행 후 처리 라고 보면 될 듯 합니다.<br>빈번하게 나가는 재고를 일일이 기록하면서 보관하면 기록하는데 낭비되는 시간이 많을 것.<br>이 때문에 빈번하게 나가는 재고를 우선 작업을 하고 나서 나중에 처리를 한다고 생각하면 되겠습니다.</p><p>backflush는 재고 불출의 한 방법입니다.<br>생산은 Input을 output으로 바꾸는 것을 의미합니다.<br>즉 order을 하게 되면 input의 부품은 재고에서 사라지고 가치가 부과된 제품이 나오는 거죠.<br>이를 재고 장부 측면에서 보면 부품은 불출(issue)되어야 하고 새로운 제품이 입고(receipt)되어야 하죠.<br>이를 처리하는 간단한 방법이 backflush입니다.<br>제품이 완성되면 해당 order에 필요한 자재를 BOM과 같은 소요자재목록표를 이용해 자동으로 해당 수량만큼 불출하는 것입니다.<br>원래는 반복생산에서 나왔지만 편리성 때문에 주문제작(make-to-order)방식에서도 많이 사용하고 있습니다.</p><footer><strong>NAVER Blog</strong><cite><a href="http://blog.naver.com/PostView.nhn?blogId=wjdwodn1119&logNo=70162938290" target="_blank" rel="noopener">Backflush</a></cite></footer></blockquote><p>2019-02-14 추가<br>“백플러시”의 경우 보통 마감때문에 벌어지는 데이터 보정작업 ERP재고와 실재고를 마감시에 맞추는 일괄작업 이라는 느낌으로 많이 표현하고 있는 듯 하며<br>올바른 방법이라기보단 현실과 DATA세상과의 실제 벌어질 수 밖에 업는 괴리값들로 인한 강제 싱크작업이란 느낌이 많이 드네요…</p>]]></content>
       
       
       <categories>
@@ -317,13 +317,13 @@
       
         <tags>
             
-            <tag> EP </tag>
-            
-            <tag> Engineering Plastics </tag>
-            
             <tag> 화학 </tag>
             
             <tag> 기초소재 </tag>
+            
+            <tag> EP </tag>
+            
+            <tag> Engineering Plastics </tag>
             
         </tags>
       
@@ -550,7 +550,7 @@
       <link href="/2018/10/15/BOM-Bill-Of-Material-%EC%9E%90%EC%9E%AC%EB%AA%85%EC%84%B8%EC%84%9C/"/>
       <url>/2018/10/15/BOM-Bill-Of-Material-%EC%9E%90%EC%9E%AC%EB%AA%85%EC%84%B8%EC%84%9C/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립 품인 경우에는 계층적인 구조로 작성될 수 있다.</p><footer><strong>위키</strong><cite><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%AC_%EB%AA%85%EC%84%B8%EC%84%9C" target="_blank" rel="noopener">자재 명세서</a></cite></footer></blockquote><p>BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태 같습니다.</p><p>BOM과 처방전을 화학에서는 같이 사용하던데 느낌상 BOM은 최초 발행된 조합 정보이며 처방전은 실제 생산하면서 배합 양 비율 등이 조정되는 업데이트 되는 정보라고 이해하고있습니다.</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>자재 명세서 (Bill of Materials, BOM)은 제품을 구성하는 모든 부품들에 대한 목록이다. 부품이 복잡한 요소들로 구성되어 있는 조립 품인 경우에는 계층적인 구조로 작성될 수 있다.</p><footer><strong>위키</strong><cite><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9E%AC_%EB%AA%85%EC%84%B8%EC%84%9C" target="_blank" rel="noopener">자재 명세서</a></cite></footer></blockquote><p><del>BOM, MMD, PLM 등의 단어를 엄청 들어보면서 먼저 BOM을 정리해봅니다..기준정보 라고 불리는 ERP를 포함한 도메인에서 관리하는 정보형태 같습니다.<br>BOM과 처방전을 화학에서는 같이 사용하던데 느낌상 BOM은 최초 발행된 조합 정보이며 처방전은 실제 생산하면서 배합 양 비율 등이 조정되는 업데이트 되는 정보라고 이해하고있습니다.</del></p><p>2019-02-14 추가<br>제조 방법에 따라 다르겠지만 보통 기준정보에서 최초 정의된 원료와 부원료의 목록과 배합비 장비의 운전컨디션정보(온도, 암페어 등)를 정의해둔 문서 혹은 DB화된 정보입니다.</p><p>BOM을 기준으로 실제는 수치변경을 미세하게 하는경우가 많으며 특히 화학공정은 수치와 결과물이 날씨,온도에 민감하게 변경되기에<br>처방전을 따로 관리하고 가장 최근의 처방을 최신 처방전으로 업데이트 해서 다음 배치의 처방전에서 참고하는 프로세스로 많이 사용하는 듯 합니다.</p><p>“봄” 이라고 발음대로 부르는 사람은 거의 없어보이며 “비오엠” 이라는 통용되는 발음으로 사용되고 있는 듯 합니다.<br>해당 BOM과 처방전은 LIMS에서 관리하느냐 MMD에서 관리하느냐의 OwnerShip이 조금 다른경우도 있으며 이는 해당 조직 구성과 정의된 R&amp;R따라서 관리대상을 지정하면 됩니다.</p>]]></content>
       
       
       <categories>
@@ -697,9 +697,9 @@
       
         <tags>
             
-            <tag> C# </tag>
-            
             <tag> MVC4 </tag>
+            
+            <tag> C# </tag>
             
             <tag> TempData </tag>
             
