@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>ROI</title>
+      <link href="/2019/03/01/ROI/"/>
+      <url>/2019/03/01/ROI/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>투자자본수익률. 어느 회사건 투자를 한다. 건물, 기계, 유가증권 등 투자의 대상이 아닌 것은 아무것도 없다. 따라서 개념상 “”투자=자산””이라는 등식이 성립한다. 그러나 투자재원은 주주들이 납입한 자기자본과 외부차입금으로 나눠진다. 문제는 투자가 얼마나 수익성이 있는가에 달려 있다. 자금이 효율적으로 이용되면 수익이 올라가고 비효율적으로 운영되면 수익성은 떨어진다. A라는 회사와 B라는 회사가 겉으로는 똑같이 7억원의 이익을 냈다고 하더라도 투자자본이 A는 50억원이고 B는 60억원이었다면 A가 훨씬 효율적인 경영을 했다는 얘기다. ROI는 그만큼 효율성에 초점을 맞춘 개념이다.</p><p>최근 국내경기가 둔화되면서 기업들도 과거처럼 몸집키우기식 경영형태에서 벗어나 효율 및 수익성을 주시하는 경영평가기법에 관심을 갖기 시작했다. ROI 이외에도 회사가 보유하고 있는 자산(asset)에 대한 수익률(ROA), 주주자본(equity)에 대한 수익률(ROE)등도 기준만 다를 뿐 수익성 위주의 경영을 강조하는 개념들이다.<br>[네이버 지식백과] ROI [return on investment] (한경 경제용어사전)</p><footer><strong>네이버</strong><cite><a href="https://terms.naver.com/entry.nhn?docId=2063220&cid=42107&categoryId=42107" target="_blank" rel="noopener">ROI</a></cite></footer></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> MES </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ROI </tag>
+            
+            <tag> return on investment </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ActionResult&lt;T&gt;</title>
       <link href="/2019/02/01/ActionResult/"/>
       <url>/2019/02/01/ActionResult/</url>
@@ -697,9 +724,9 @@
       
         <tags>
             
-            <tag> C# </tag>
-            
             <tag> MVC4 </tag>
+            
+            <tag> C# </tag>
             
             <tag> TempData </tag>
             
