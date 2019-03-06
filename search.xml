@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>Scaffold-DbContext</title>
+      <link href="/2019/03/06/Scaffold-DbContext/"/>
+      <url>/2019/03/06/Scaffold-DbContext/</url>
+      
+        <content type="html"><![CDATA[<p>실제..많이 쓰는데..자꾸 옵션을 까먹어서 정리를..<br>나중에 추가는 계속 하고</p><p>기본<br><figure class="highlight shell"><figcaption><span>Session</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scaffold-DbContext "Server=.;Database=&#123;DB명&#125;;User ID=&#123;계정아이디&#125;;Password=&#123;비밀번호&#125;;" Microsoft.EntityFrameworkCore.SqlServer</span><br></pre></td></tr></table></figure></p><p>One Table<br><figure class="highlight shell"><figcaption><span>Session</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scaffold-DbContext "Server=.;Database=&#123;DB명&#125;;User ID=&#123;계정아이디&#125;;Password=&#123;비밀번호&#125;;" Microsoft.EntityFrameworkCore.SqlServer -Table 테이블명</span><br></pre></td></tr></table></figure></p><p>Context명<br><figure class="highlight shell"><figcaption><span>Session</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scaffold-DbContext "Server=.;Database=&#123;DB명&#125;;User ID=&#123;계정아이디&#125;;Password=&#123;비밀번호&#125;;" Microsoft.EntityFrameworkCore.SqlServer -Context 컨텍스트명</span><br></pre></td></tr></table></figure></p><p>Output Dir<br><figure class="highlight shell"><figcaption><span>Session</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Scaffold-DbContext "Server=.;Database=&#123;DB명&#125;;User ID=&#123;계정아이디&#125;;Password=&#123;비밀번호&#125;;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir 경로/하위경로/...</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Web </category>
+          
+          <category> ASP.Net MVC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Entity Framework Core </tag>
+            
+            <tag> Scaffold </tag>
+            
+            <tag> DbContext </tag>
+            
+            <tag> PowerShell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ROI</title>
       <link href="/2019/03/01/ROI/"/>
       <url>/2019/03/01/ROI/</url>
@@ -49,11 +82,11 @@
       
         <tags>
             
+            <tag> C# </tag>
+            
             <tag> Core 2.1 </tag>
             
             <tag> 반환형 </tag>
-            
-            <tag> C# </tag>
             
         </tags>
       
@@ -105,13 +138,13 @@
       
         <tags>
             
-            <tag> 화학 </tag>
-            
-            <tag> 기초소재 </tag>
-            
             <tag> EPS </tag>
             
             <tag> 스티로폼 </tag>
+            
+            <tag> 화학 </tag>
+            
+            <tag> 기초소재 </tag>
             
         </tags>
       
@@ -344,13 +377,13 @@
       
         <tags>
             
-            <tag> EP </tag>
-            
-            <tag> Engineering Plastics </tag>
-            
             <tag> 화학 </tag>
             
             <tag> 기초소재 </tag>
+            
+            <tag> EP </tag>
+            
+            <tag> Engineering Plastics </tag>
             
         </tags>
       
@@ -726,9 +759,9 @@
             
             <tag> MVC4 </tag>
             
-            <tag> C# </tag>
-            
             <tag> TempData </tag>
+            
+            <tag> C# </tag>
             
         </tags>
       
